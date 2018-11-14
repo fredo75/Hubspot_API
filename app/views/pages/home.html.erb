@@ -1,3 +1,18 @@
 <h1>Pages#home</h1>
 <h1>Test</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+
+<% @leads.each do |lead| %>
+  <h2><%= lead.name %></h2>
+  <p><%= lead.email %></p>
+<% end %>
+
+
+
+
+<% @leads.each do |lead| %>
+  <%= link_to lead.name, lead_path(lead) %>
+<% end %>
