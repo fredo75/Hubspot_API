@@ -1,6 +1,6 @@
-class RestaurantsController < ApplicationController
+class LeadsController < ApplicationController
   def index         # GET /restaurants
-    @leads = Leads.all
+    @leads = Lead.all
   end
 
   def show          # GET /restaurants/:id
